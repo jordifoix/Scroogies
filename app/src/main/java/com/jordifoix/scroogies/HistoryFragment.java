@@ -116,7 +116,9 @@ public class HistoryFragment extends Fragment {
                         Log.d("FOIX","key (telefon): "+telf2);
                         Double debt = Double.valueOf(debtSnapshot.getValue().toString());
                         Log.d("FOIX","debt: "+debt+" €");
-                        deutes.add(new Deute(telefon1,"",telf2,"",debt));
+                        if (debt!=0.0) {
+                            deutes.add(new Deute(telefon1,"",telf2,"",debt));
+                        }
                         //Toast.makeText(getContext(),"Child loaded",Toast.LENGTH_SHORT).show();
                    /* }
                     else {
@@ -157,6 +159,9 @@ public class HistoryFragment extends Fragment {
                         deutesBuscats.clear();
                         for (Deute deute : deutes) {
                             if (esPartDe(s.toString(),deute.getTelefonUsuari2())) {
+                                deutesBuscats.add(deute);
+                            }
+                            else if (!(deute.getNomUsuari2().equals("")) && esPartDe(s.toString(),deute.getNomUsuari2())) {
                                 deutesBuscats.add(deute);
                             }
                         }

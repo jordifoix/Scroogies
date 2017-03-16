@@ -22,5 +22,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/searchText"
         android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:divider="#FFFFFF"
         android:dividerHeight="10dp" />
 </RelativeLayout>

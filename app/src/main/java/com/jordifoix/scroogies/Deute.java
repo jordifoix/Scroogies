@@ -2,6 +2,8 @@ package com.jordifoix.scroogies;
 
 import android.text.method.DateTimeKeyListener;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.sql.Date;
 import java.sql.Time;
 
@@ -18,6 +20,17 @@ public class Deute {
     private Double quantitat;
 
     public Deute() {
+    }
+
+    public Deute(String telefonUsuari1, String nomUsuari1, String telefonUsuari2, String nomUsuari2, Double quantitat) {
+
+        this.telefonUsuari1 = telefonUsuari1;
+        this.nomUsuari1 = nomUsuari1;
+        this.telefonUsuari2 = telefonUsuari2;
+        this.nomUsuari2 = nomUsuari2;
+        this.quantitat = BigDecimal.valueOf(quantitat)
+                .setScale(2, RoundingMode.HALF_UP)
+                .doubleValue();;
     }
 
     public String getTelefonUsuari1() {
@@ -57,15 +70,9 @@ public class Deute {
     }
 
     public void setQuantitat(Double quantitat) {
-        this.quantitat = quantitat;
+        this.quantitat = BigDecimal.valueOf(quantitat)
+                .setScale(2, RoundingMode.HALF_UP)
+                .doubleValue();
     }
 
-    public Deute(String telefonUsuari1, String nomUsuari1, String telefonUsuari2, String nomUsuari2, Double quantitat) {
-
-        this.telefonUsuari1 = telefonUsuari1;
-        this.nomUsuari1 = nomUsuari1;
-        this.telefonUsuari2 = telefonUsuari2;
-        this.nomUsuari2 = nomUsuari2;
-        this.quantitat = quantitat;
-    }
 }
