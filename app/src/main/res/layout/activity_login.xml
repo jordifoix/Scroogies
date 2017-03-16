@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.jordifoix.scroogies.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/titleTexta"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/holo_blue_light"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Scroogies"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/phoneText"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTexta"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:text="676934247" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneText"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Scroogies Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:text="qwerty" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
+        android:background="#707070"
+        android:textColor="#FFFFFF"
+        android:layout_height="50dp"
+        android:layout_below="@id/passwordText"
+        android:layout_marginTop="5dp"
+        android:text="Log In" />
+
+    <Button
+        android:id="@+id/passwordResetButton"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signInButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Forgot Password?"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

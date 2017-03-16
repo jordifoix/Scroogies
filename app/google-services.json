@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "91804782031",
+    "firebase_url": "https://scroogies-79bb9.firebaseio.com",
+    "project_id": "scroogies-79bb9",
+    "storage_bucket": "scroogies-79bb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91804782031:android:8ee9a7917a37bb15",
+        "android_client_info": {
+          "package_name": "com.jordifoix.scroogies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91804782031-lgspetlcu3jdiius5i9i0msohds05tkr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jordifoix.scroogies",
+            "certificate_hash": "db141ab41c5b1b448656e86ef7dcb681d1b25c0b"
+          }
+        },
+        {
+          "client_id": "91804782031-9rrbaujl4p02rkgmti7rvtjaomfriq1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4x5Pn9v7ryeYPzCgVq04HzajNU7poJrc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91804782031-9rrbaujl4p02rkgmti7rvtjaomfriq1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

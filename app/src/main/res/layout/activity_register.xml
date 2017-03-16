@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jordifoix.scroogies.RegisterActivity">
+
+    <TextView
+        android:id="@+id/titleTexta"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:background="#7FEECC"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Scroogies"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/registerPhoneText"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTexta"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Introduce Phone Number"
+        android:inputType="number"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/registerPasswordText"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerPhoneText"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Set a Scroogies Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:background="#707070"
+        android:textColor="#FFFFFF"
+        android:layout_height="50dp"
+        android:layout_below="@id/registerPasswordText"
+        android:layout_marginTop="5dp"
+        android:text="Sign up" />
+
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#DD6030"
+        android:text="Go back"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

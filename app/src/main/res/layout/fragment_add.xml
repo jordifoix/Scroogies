@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/user2PhoneText"
+        android:hint="Insert User 2 Phone Number" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/quantityText"
+        android:layout_below="@id/user2PhoneText"
+        android:hint="Insert Quantity" />
+
+    <Button
+        android:text="Add Debt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/quantityText"
+        android:id="@+id/addButton" />
+
+</RelativeLayout>

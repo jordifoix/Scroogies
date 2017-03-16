@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jordifoix.scroogies.PagarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Pollo Antichill"
+            android:background="#C0D3C5"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#C0D3C5"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="666 666 666"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="10dp"
+            android:layout_weight="3"
+            android:background="#C0D3C5"
+            android:fontFamily="casual"
+            android:gravity="center_vertical"
+            android:text="Left to pay: 100€"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#C0D3C5"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="11">
+
+            <SeekBar
+                android:id="@+id/importSeekBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:thumbTint="#3030AA" />
+
+            <EditText
+                android:id="@+id/importText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0.00"
+                android:textColor="#3030AA"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/euroText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="€"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/enrereButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#DD6030"
+            android:textColor="#FFFFFF"
+            android:elevation="13dp"
+            android:gravity="center"
+            android:text="Go Back" />
+
+    </LinearLayout>
+
+</RelativeLayout>
