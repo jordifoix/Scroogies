@@ -21,6 +21,7 @@ public class PagarActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(PagarActivity.this,MainActivity.class);
                 startActivity(intent);
+                // GITHUB ROCKSSSS
             }
         });
 
