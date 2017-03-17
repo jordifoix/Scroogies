@@ -104,7 +104,7 @@ public class HistoryFragment extends Fragment {
                 // PILLEM NOMS DELS CONTACTES DEL MOBIL:
                 getAllContacts();
 
-                Toast.makeText(getContext(),"Mida de deutes: "+deutes.size(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(),"Mida de deutes: "+deutes.size(),Toast.LENGTH_SHORT).show();
                 for (Deute debt : deutes) {
                     Log.d("antichill","telefon en els deutes, telefon: "+debt.getTelefonUsuari2()+", nom: "+debt.getNomUsuari2());
                 }

@@ -1,6 +1,7 @@
 package com.jordifoix.scroogies;
 
 import android.os.Bundle;
+import android.renderscript.Double2;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -43,9 +44,28 @@ public class AddFragment extends Fragment {
                 //Toast.makeText(getActivity().getApplicationContext(),"El meu telefon: "+telefon1,Toast.LENGTH_SHORT).show();
                 String telefon2 = user2PhoneText.getText().toString();
                 //Toast.makeText(getActivity().getApplicationContext(),"El seu telefon: "+telefon2,Toast.LENGTH_SHORT).show();
-                final Double quantitat = Double.valueOf(quantityText.getText().toString());
+                String quantitatString = quantityText.getText().toString();
                 //Toast.makeText(getActivity().getApplicationContext(),"Quantitat: "+quantitat,Toast.LENGTH_SHORT).show();
-                addDebt(telefon1,telefon2,quantitat);
+                int i;
+                Double quantitat;
+                for (i = 0; i < quantitatString.length(); ++i) {
+                    if (quantitatString.charAt(i)=='.') {
+                        if (i+3 != quantitatString.length()) {
+                            Toast.makeText(getContext(),"Maximum 2 decimals",Toast.LENGTH_SHORT).show();
+                            break;
+                        }
+                        else {
+                            quantitat = Double.parseDouble(quantitatString);
+                            addDebt(telefon1,telefon2,quantitat);
+                            Toast.makeText(getContext(),"Added new debt!",Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+                if (i==quantitatString.length()-1) {
+                    quantitat = Double.parseDouble(quantitatString);
+                    addDebt(telefon1,telefon2,quantitat);
+                    Toast.makeText(getContext(),"Added new debt!",Toast.LENGTH_SHORT).show();
+                }
             }
         });
         return view;
