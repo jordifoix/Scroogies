@@ -50,7 +50,7 @@ public class AddFragment extends Fragment {
                 Double quantitat;
                 for (i = 0; i < quantitatString.length(); ++i) {
                     if (quantitatString.charAt(i)=='.') {
-                        if (i+3 != quantitatString.length()) {
+                        if (i+3 != quantitatString.length() && i+2 != quantitatString.length() && i+1 != quantitatString.length()) {
                             Toast.makeText(getContext(),"Maximum 2 decimals",Toast.LENGTH_SHORT).show();
                             break;
                         }
@@ -61,7 +61,7 @@ public class AddFragment extends Fragment {
                         }
                     }
                 }
-                if (i==quantitatString.length()-1) {
+                if (i==quantitatString.length()) {
                     quantitat = Double.parseDouble(quantitatString);
                     addDebt(telefon1,telefon2,quantitat);
                     Toast.makeText(getContext(),"Added new debt!",Toast.LENGTH_SHORT).show();
