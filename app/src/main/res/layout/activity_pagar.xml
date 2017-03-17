@@ -61,8 +61,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="#C0D3C5"
             android:layout_weight="3"
+            android:background="#C0D3C5"
             android:orientation="horizontal"
             android:weightSum="11">
 
@@ -97,18 +97,36 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/enrereButton"
-            android:layout_width="150dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_gravity="bottom|left"
+            android:orientation="horizontal"
             android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:background="#DD6030"
-            android:textColor="#FFFFFF"
-            android:elevation="13dp"
-            android:gravity="center"
-            android:text="Go Back" />
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/enrereButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|left"
+                android:layout_weight="1"
+                android:background="#DD6030"
+                android:elevation="13dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="Go Back"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#9050DF"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:text="Pay" />
+        </LinearLayout>
 
     </LinearLayout>
 
